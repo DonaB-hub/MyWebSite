@@ -1,22 +1,27 @@
+ფოტოების დამატება
 
 1. ვაპატარავებთ ფოტოების მეგაბაიტებს imagecompressor.com ამ საიტზე
 
 2. კომპიუტერში ვქმნით პროექტის ფოლდერს და შიგნით ვყრით ყველა იმ ფოტოს რაც იმ პროექტისთვის იქნება საჭირო (არ აქვს მნიშვნელობა სერვისები იქნება თუ გალერია)
 
-2. შევდივართ გითჰაბზე MyWebSite/Images/Services ან MyWebSite/Images/Gallery ვაწვებით Add file შემდეგ Upload Files დესკტოპიდან მაუსით გადაგვაქვს მთლიანი ფოლდერი გითჰაბზე
+3. შევდივართ გითჰაბზე MyWebSite/Images/Services ან MyWebSite/Images/Gallery ვაწვებით Add file შემდეგ Upload Files დესკტოპიდან მაუსით გადაგვაქვს მთლიანი ფოლდერი გითჰაბზე
 (Choose your files თუ დააწვები ფოლდერს ვერ ატვირთავ და არ გირჩევ მაგ შარში გარევას)
 
-ელოდები მწვანე ხაზის შევსებას და შემდეგ აწვები Commit Changes
+4. ელოდები მწვანე ხაზის შევსებას და შემდეგ აწვები Commit Changes
+
+5. მოგვიანებით დაგჭირდება თითოეული ფოტოს ლინკი 
 
 
 
-ახალი გალერიის ან სერვისის დამატება
-2. ვაკოპირებთ Gallerys ან Services მთლიან კოდს
 
-3. შევდივართ jsonlint.com ამ საიტზე 
 
-4. ვაკოპირებთ ერთ-ერთ პროექტის კოდს 
+ახალი გალერის ან სერვისის დამატება
 
+1. ვაკოპირებთ Gallerys ან Services მთლიან კოდს
+
+2. შევდივართ jsonlint.com ამ საიტზე და შეგვყავს დაკოპირებული კოდი
+
+3. ვაკოპირებთ ერთ-ერთ პროექტის კოდს და ვამატებთ ზემოთ
 მაგალითად: 
 {
     "id": "3",
@@ -26,15 +31,23 @@
     "textSVE": "Förvandla ditt loft på bara en dag",
     "describtionENG": "At Innovative Living Solutions, we believe in the power of transformation. ",
     "describtionSVE": "På Innovativa Boendelösningar tror vi på förvandlingens kraft. Vårt senaste ",
-    "mainImage": "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/a3c4cddc-4922-448f-a21b-a0abb9d0e76a.jpeg?raw=true",
+    "mainImage": "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/021f7a2a-6d04-4182-8fc2-55bd37bcc8f9.jpeg?raw=true",
     "images": [
       "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/021f7a2a-6d04-4182-8fc2-55bd37bcc8f9.jpeg?raw=true",
       "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/2406533b-ee3a-4278-b85e-dc38488348ea.jpeg?raw=true",
-      "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/9f3162d8-ff06-444b-b937-7cb75b661ae8.jpeg?raw=true",
-      "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/a3c4cddc-4922-448f-a21b-a0abb9d0e76a.jpeg?raw=true",
-      "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/cd7692db-275f-44e0-a038-3a6acc2968ba.jpeg?raw=true",
       "https://github.com/levanydze/SUP/blob/main/DonB/projects/project4/fff3fa98-2dec-4ea8-94b2-2e821a51c2cd.jpeg?raw=true"
     ]
   },
 
-და ვცვლით სურვილის მიხედვით 
+4. აუცილებლად ვცვლით  "id"  და არ უნდა ემთხვეოდეს არცერთი id ერთმანეთს (სერვისები და გალერეა შეიძლება დაემთხვეს ეგ არ არის პრობლემა),
+გირჩევ შეინარჩუნო ზრდადობა და თუ რომელიმეს გადაახტები ან მოგვიანებით წაშლი არაუშავს (ასევე ეცადე ფოტოების ფოლდერების სახელის დანომვრა და id დაამთხვიო ერთმანეთს უკეტესი ნავიგაციისთვის)
+
+5. ტექსტების შეცვლის შემდეგ აწვები Validate Json 
+
+6. თუ დაგიწერს Json Valid ასეიგი ყველაფერი კარგად გააკეთე
+
+7. თუ დაგიწერს Json Invalid  ასეიგი რაღაც შეცდომაა და ამ ხაზს გიჩვენებს წითელ ფერში (შეადარე სხვა კოდს, ყურადღება მიაქციე მძიმეებს და ბრჭყალებს მათშორის ბრჭყალებს ტექსტშიც)
+
+8. შეგიძლია დააკოპირო ეს კოდი მთლიანად შეხვიდე MyWebSite/Services & Gallery data დააჭირო იმ ფაილს რომელსაც ცვლი
+
+9. ზემოთ გიჩვენებს პასტას მაუსის გადატარებისას დაგიწერს Edit this file ამაზე დაჭერის შემდეგ  Ctrl-a   Ctrl-v  და Commit Changes. მორჩა
